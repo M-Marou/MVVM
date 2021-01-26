@@ -48,3 +48,7 @@ C:\Users\msckt\OneDrive\Bureau\MVVM\MVVMP1\MVVMP1\obj\Debug\MVVMP1.csproj.CoreCo
 C:\Users\msckt\OneDrive\Bureau\MVVM\MVVMP1\MVVMP1\obj\Debug\MVVMP1.csproj.CopyComplete
 C:\Users\msckt\OneDrive\Bureau\MVVM\MVVMP1\MVVMP1\obj\Debug\MVVMP1.exe
 C:\Users\msckt\OneDrive\Bureau\MVVM\MVVMP1\MVVMP1\obj\Debug\MVVMP1.pdb
+C:\Users\Youcode\Desktop\MVVM\MVVMP1\MVVMP1\obj\Debug\Views\FirstChildView.g.cs
+C:\Users\Youcode\Desktop\MVVM\MVVMP1\MVVMP1\obj\Debug\Views\SecondChildView.g.cs
+C:\Users\Youcode\Desktop\MVVM\MVVMP1\MVVMP1\obj\Debug\Views\FirstChildView.baml
+C:\Users\Youcode\Desktop\MVVM\MVVMP1\MVVMP1\obj\Debug\Views\SecondChildView.baml

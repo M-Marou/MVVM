@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 
 namespace MVVMP1.ViewModels
 {
-    class ShellViewModel : Screen
+    class ShellViewModel : Conductor<Object>
     {
         private string _firstName = "MarOne";
+        private string _lastName;
 
         public string FirstName
         {
@@ -18,8 +19,6 @@ namespace MVVMP1.ViewModels
                 NotifyOfPropertyChange(() => FirstName); 
                 NotifyOfPropertyChange(() => FullName); }
         }
-
-        private string _lastName;
 
         public string LastName
         {
@@ -34,6 +33,14 @@ namespace MVVMP1.ViewModels
             get { return $"{FirstName} {LastName}"; }
         }
 
+        public void LoadPageOne()
+        {
+            ActivateItem(new FirstChildViewModel());
+        }
 
+        public void LoadPageTwo()
+        {
+            ActivateItem(new SecondChildViewModel());
+        }
     }
 }
