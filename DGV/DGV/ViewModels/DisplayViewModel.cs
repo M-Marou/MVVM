@@ -12,10 +12,14 @@ namespace DGV.ViewModels
 {
     public class DisplayViewModel : Screen
     {
+        //public DataView myDG { get; private set; }
+
+        //private DataView myDG;
+
         public void DataBinding()
         {
             SqlConnection con = new SqlConnection();
-            String SqlConnection = ConfigurationManager.ConnectionStrings["SqlConnection"].ConnectionString;
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["SqlCon"].ConnectionString;
             con.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "SELECT * FROM [Employee]";
@@ -24,7 +28,7 @@ namespace DGV.ViewModels
             DataTable dt = new DataTable("Employee");
             da.Fill(dt);
 
-            myDG.ItemSource = dt.DefaultView;
+            myDG = dt.DefaultView;
         }
     }
 }

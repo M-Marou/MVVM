@@ -14,4 +14,5 @@ namespace DGV
             return ConfigurationManager.ConnectionStrings[name].ConnectionString;
         }
     }
+
 }

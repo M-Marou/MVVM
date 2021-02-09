@@ -4,13 +4,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:DGV.Views"
-             mc:Ignorable="d" Background= "LightGreen"
+             mc:Ignorable="d" Background= "Azure"
              d:DesignHeight="450" d:DesignWidth="600">
     <Grid>
-        <DataGrid x:Name="myDG" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="278" Margin="56,98,0,0" VerticalAlignment="Top" Width="486">
+        <DataGrid x:Name="myDG" HorizontalAlignment="Left" Height="278" Margin="56,98,0,0" VerticalAlignment="Top" Width="486">
             <DataGrid.Columns>
                 <DataGridTextColumn Binding="{Binding Name}" Header="Employee Name" Width="200"/>
-                <DataGridTextColumn Header="Position" Width="*"/>
+                <!--<DataGridTextColumn Header="Position" Width="*"/>-->
                 <DataGridTextColumn Binding="{Binding Office}" Header="Office" Width="*"/>
                 <DataGridTextColumn Binding="{Binding Age}" Header="Age" Width="*"/>
             </DataGrid.Columns>
